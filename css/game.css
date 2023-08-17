@@ -53,7 +53,7 @@ header{
 .grid{
   position: absolute;
   display: grid;
-  grid-template-columns: repeat(8, 1fr);
+  grid-template-columns: repeat(6, 1fr);
   gap: 15px;
   margin: 110px auto;
   width: 100%;
@@ -64,11 +64,11 @@ header{
 .card{
   aspect-ratio: 3/4;
   width: 100%;
-  background-color: #ccc;
   border-radius: 5px;
   position: relative;
   transition: all 400ms ease;
   transform-style: preserve-3d;
+  background-color: #ccc;
 }
 
 .face{
@@ -99,4 +99,27 @@ header{
 .disable-card{
   filter: saturate(0);
   opacity: 0.5;
+}
+
+.restartButton{
+  position:fixed;
+  bottom: 10px;
+  background-color:#3e8e41;
+  color: #fff;
+  padding: 10px 10px;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: bolder;
+
+}
+
+/* Estilizar o botão quando o cursor estiver em cima */
+.restartButton:hover {
+  background-color: #82ca85; /* Cor de fundo mais escura quando o cursor estiver em cima */
+}
+
+/* Estilizar o botão quando estiver pressionado */
+.restartButton:active {
+  background-color: #3e8e41; /* Cor de fundo ainda mais escura quando o botão estiver pressionado */
+  border:solid black;
 }
