@@ -145,3 +145,9 @@ restartButton.addEventListener('click', function() {
     // Recarregar a página
     location.reload();
 });
+
+// Obter o elemento de áudio pelo ID
+const audioElement = document.getElementById("musica");
+
+// Iniciar a reprodução automaticamente
+audioElement.play();
