@@ -2,6 +2,8 @@ const grid = document.querySelector('.grid');
 const spanPlayer = document.querySelector('.player');
 const timer = document.querySelector('.timer')
 
+
+
 const characters = [
   'bulma',
   'dragon',
@@ -119,3 +121,13 @@ const loadGame = () =>{
         startTimer();
         loadGame();
     }
+
+    
+// Selecionar o botão pelo atributo data-restart-Button
+const restartButton = document.querySelector('[data-restart-Button]');
+
+// Adicionar um evento de clique ao botão
+restartButton.addEventListener('click', function() {
+    // Recarregar a página
+    location.reload();
+});
