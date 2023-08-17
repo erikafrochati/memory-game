@@ -1,5 +1,5 @@
 main{
-  background-image: url(../imagens/bglogin.jpg);
+  background-image: url(../imagens/capa_login.png);
   background-size: cover;
   background-position: cover;
   background-repeat: no-repeat;
@@ -34,7 +34,7 @@ main{
   justify-content: center;
   margin-bottom: 40px;
 }
-.login-header .icon-chapeu{
+.login-header .icon-goku{
   width: 100%;
   max-width: 158px;
   margin-bottom: 10px;
