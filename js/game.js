@@ -5,8 +5,22 @@ const timer = document.querySelector('.timer')
 
 
 const characters = [
-  'bulma',
-  'dragon',
+    'bulma',
+    'dragon',
+    'gohan',
+    'kamisama',
+    'cell',
+    'Vegeta',
+    'freeza',
+    'chi-chi',
+    'Android_18',
+    'gokusuper',
+    'dragonballz',
+    'kame',
+    'kuririn',
+    'dragonballmovie',
+    'piccolo',
+    'turma',
 
 ]
 
@@ -29,7 +43,7 @@ const resetFirstAndSecondCard = ()=>{
 const checkEndGame = ()=> {
     const disabledCards = document.querySelectorAll('.disable-card');
 
-    if(disabledCards.length ===4){
+    if(disabledCards.length ===32){
        setTimeout(()=>{
         clearInterval(this.loop);
         alert(`Parabéns, ${spanPlayer.innerHTML}! Seu tempo foi: ${timer.innerHTML}`);

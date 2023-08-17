@@ -53,7 +53,7 @@ header{
 .grid{
   position: absolute;
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(8, 1fr);
   gap: 15px;
   margin: 110px auto;
   width: 100%;
@@ -102,15 +102,14 @@ header{
 }
 
 .restartButton{
+  margin-left: 295px;
   position:fixed;
-  bottom: 10px;
+  bottom: 70px;
   background-color:#3e8e41;
   color: #fff;
   padding: 10px 10px;
   border-radius: 10px;
   font-size: 15px;
-  font-weight: bolder;
-
 }
 
 /* Estilizar o botão quando o cursor estiver em cima */
