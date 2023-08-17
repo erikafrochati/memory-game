@@ -1,24 +1,12 @@
 const grid = document.querySelector('.grid');
 const spanPlayer = document.querySelector('.player');
 const timer = document.querySelector('.timer');
+const restartButton = document.querySelector("data-restart-Button");
 
 const characters = [
   'bulma',
   'dragon',
-  'gohan',
-  'kamisama',
-  'cell',
-  'Vegeta',
-  'freeza',
-  'chi-chi',
-  'Android_18',
-  'gokusuper',
-  'dragonballz',
-  'kame',
-  'kuririn',
-  'dragonballmovie',
-  'piccolo',
-  'turma',
+  
 ];
 
 const createElement = (tag, className) => {
@@ -30,15 +18,18 @@ const createElement = (tag, className) => {
 let firstCard = '';
 let secondCard = '';
 
+
+/* Verifica se todas as cartas foi encontrada se sim, acaba o jogo*/
 const checkEndGame = () => {
   const disabledCards = document.querySelectorAll('.disabled-card');
 
-  if (disabledCards.length === 32) {
+  if (disabledCards.length === 4) {
     clearInterval(this.loop);
     alert(`Parabéns, ${spanPlayer.innerHTML}! Seu tempo foi de: ${timer.innerHTML}`);
   }
 }
 
+/*Verifica se as cartas são iguais*/
 const checkCards = () => {
   const firstCharacter = firstCard.getAttribute('data-character');
   const secondCharacter = secondCard.getAttribute('data-character');
@@ -67,6 +58,7 @@ const checkCards = () => {
 
 }
 
+/* Revela as cartas do jogo, primeira e segunda*/
 const revealCard = ({ target }) => {
 
   if (target.parentNode.className.includes('reveal-card')) {
@@ -116,6 +108,7 @@ const loadGame = () => {
   });
 }
 
+/* Função da contagem do Tempo */
 const startTimer = () => {
 
   this.loop = setInterval(() => {
@@ -130,3 +123,7 @@ window.onload = () => {
   startTimer();
   loadGame();
 }
+
+restartButton.addEventListener("click", () => {
+  location.reload();
+});
