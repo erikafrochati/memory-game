@@ -101,12 +101,12 @@ header{
 }
 
 .restartButton{
-  margin-left: 240px;
-  position:fixed;
-  bottom: 850px;
-  background-color:#3e8e41;
+  position: absolute;
+  bottom: 90%; /* Ajuste a posição vertical conforme necessário */
+  left: 1%; /* Ajuste a posição horizontal conforme necessário */
+  background-color: #3e8e41;
   color: #fff;
-  padding: 10px 10px;
+  padding: 10px 20px; /* Ajuste o padding conforme necessário */
   border-radius: 10px;
   font-size: 15px;
 }
