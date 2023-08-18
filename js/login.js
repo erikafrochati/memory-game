@@ -13,7 +13,7 @@ const validateInput = ({ target }) => {
 const handleSubmit = (event) => {
     event.preventDefault();
     setTimeout(() => {
-        window.location = 'memory-game/pages/game.html'
+        window.location = 'https://erikafrochati.github.io/memory-game/pages/game.html'
     }, 1000)
     localStorage.setItem('player', input.value)
 
