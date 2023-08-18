@@ -101,9 +101,9 @@ header{
 }
 
 .restartButton{
-  margin-left: 295px;
+  margin-left: 240px;
   position:fixed;
-  bottom: 70px;
+  bottom: 850px;
   background-color:#3e8e41;
   color: #fff;
   padding: 10px 10px;
