@@ -1,6 +1,6 @@
 
 body{
-  background-image: url(../imagens/capa.png);
+  background-image: url(imagens/capa.png);
   background-size: cover;
   overflow: hidden;
 }
