@@ -1,12 +1,11 @@
 body{
   background-image: url(../imagens/capa.png);
-  background-size: cover;
-  overflow: hidden;
+  background-size:80cm;
+
 }
+
 main{
- 
   box-sizing: border-box;
-  
   padding: 10px;
   display: flex;
   flex-direction: column;
@@ -16,8 +15,7 @@ main{
   max-width:1400px;
   min-height: 100vh;
   margin: 0 auto;
-  transform: translate(-5%,-2%);
-  
+  transform: translate(-1%,-1%);
   
 }
 
@@ -28,29 +26,28 @@ main{
   position: relative;
   width: 100%;
   max-width: 1050px;
-  height: 100vh;
-  transform: translate(-5%,-2%);
+  height: 200vh;
+  transform: translate(-2%,-2%);
   align-items: center;
   
 }
 
-
 header{
-  position: absolute;
+  position: fixed; /* Alterar de absolute para fixed */
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 100%;
+  width: 50%;
   max-width: 705px;
   background-color: rgba(255, 255, 255, .8);
-  padding: 25px;
+  padding: 20px;
   font-size: 1.2em;
   margin: 35px 0;
-  border-radius: 5px;
+  border-radius: 15px;
 }
 
 .grid{
-  position: absolute;
+  position: fixed; /* Alterar de absolute para fixed */
   display: grid;
   grid-template-columns: repeat(8, 1fr);
   gap: 15px;
@@ -101,14 +98,15 @@ header{
 }
 
 .restartButton{
-  position: absolute;
-  bottom: 90%; /* Ajuste a posição vertical conforme necessário */
-  left: 1%; /* Ajuste a posição horizontal conforme necessário */
+  position: fixed; /* Alterar de absolute para fixed */
+  bottom: 91%; /* Ajuste a posição vertical conforme necessário */
+  border-block-end-width: 20%; /* Ajuste a posição horizontal conforme necessário */
   background-color: #3e8e41;
   color: #fff;
-  padding: 10px 20px; /* Ajuste o padding conforme necessário */
+  padding: 10px 10px; /* Ajuste o padding conforme necessário */
   border-radius: 10px;
   font-size: 15px;
+  transform: translate(-2%,-2%);
 }
 
 /* Estilizar o botão quando o cursor estiver em cima */
